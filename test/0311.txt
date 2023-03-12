@@ -1,0 +1,35 @@
+발표
+주관이 들어가고 
+전원이 다 발표하면 
+주마다 메인발표 
+
+
+이상치 탐지 
+차원축소 
+언더오버 
+themis::smote adasyn
+
+아노바 type
+
+https://www.tidymodels.org/start/tuning/
+Ginseng7오전 11:23
+> library(quantreg)
+> rq(user_counts ~ temperature + wind + precipitation, df, tau = 0.5)
+Call:
+rq(formula = user_counts ~ temperature + wind + precipitation, 
+    tau = 0.5, data = df)
+
+Coefficients:
+  (Intercept)   temperature          wind precipitation 
+   5941.83946     268.89202    -129.40501     -83.38428 
+
+Degrees of freedom: 2097 total; 2093 residual
+
+> library(broom)
+> model %>%
++   tidy %>%
++   slice(-1) %>%
++   pull(estimate) %>%
++   round(2)
+[1]  268.89 -129.41  -83.38
+
