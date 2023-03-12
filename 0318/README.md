@@ -9,4 +9,4 @@ V 주요 수정보완 포인트
 
 [통계]
 1. ANOVA type
-2. 분위수회귀(
+2. 분위수회귀(Quantile Regrssion)
